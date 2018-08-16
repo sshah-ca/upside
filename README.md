@@ -47,8 +47,9 @@ I believe Mocha with Chai using Selenium WebDriver fullfills the considerations 
 ### Major decisions, assumptions, blockers, and other pertinent information:
 
 - Node.js v6.x or newer
-- Selenium WebDriver, Firefox gecko driver, mocha, and chai installed
-- Only used Firefox - other browsers could easily be added
+- Selenium WebDriver, Chrome chromedriver, mocha, and chai installed
+- Only used Chrome - other browsers could easily be added
+- Generally used Selenium class locators, but xpath is typically a better way
 - Timeouts are generally an issue, so waitUntil and things like that are effective
 - Didn't branch since not really dealing with version or others using the same files
 - Didn't use pull requests since this was a simple test really not for production or being reviewed
